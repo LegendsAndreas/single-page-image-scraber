@@ -1,0 +1,17 @@
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\bin\Debug\net9.0\ImageScraber.exe
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\bin\Debug\net9.0\ImageScraber.deps.json
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\bin\Debug\net9.0\ImageScraber.runtimeconfig.json
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\bin\Debug\net9.0\ImageScraber.dll
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\bin\Debug\net9.0\ImageScraber.pdb
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\bin\Debug\net9.0\HtmlAgilityPack.dll
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\obj\Debug\net9.0\ImageScraber.csproj.AssemblyReference.cache
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\obj\Debug\net9.0\ImageScraber.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\obj\Debug\net9.0\ImageScraber.AssemblyInfoInputs.cache
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\obj\Debug\net9.0\ImageScraber.AssemblyInfo.cs
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\obj\Debug\net9.0\ImageScraber.csproj.CoreCompileInputs.cache
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\obj\Debug\net9.0\ImageScr.A08141C4.Up2Date
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\obj\Debug\net9.0\ImageScraber.dll
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\obj\Debug\net9.0\refint\ImageScraber.dll
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\obj\Debug\net9.0\ImageScraber.pdb
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\obj\Debug\net9.0\ImageScraber.genruntimeconfig.cache
+C:\Users\AndreasØstergårdChri\RiderProjects\ImageScraber\ImageScraber\obj\Debug\net9.0\ref\ImageScraber.dll

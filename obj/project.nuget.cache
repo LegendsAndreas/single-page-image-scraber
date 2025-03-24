@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "C8CsL8R+7gQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AndreasØstergårdChri\\RiderProjects\\ImageScraber\\ImageScraber\\ImageScraber.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AndreasØstergårdChri\\.nuget\\packages\\htmlagilitypack\\1.12.0\\htmlagilitypack.1.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}
