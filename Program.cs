@@ -14,23 +14,71 @@ class Program
 {
     static async Task Main(string[] args)
     {
-        Console.WriteLine(args);
-        
+        if (args.Length == 0)
+        {
+            Console.WriteLine("Usage: ImageScraber.exe <URL> <Option> <Download Folder>");
+            return;
+        }
+
         string url = args[0];
-        
+
+        string nodeElement = "";
+        string nodeAttribute = "";
+
+        if (args[1] == "a")
+        {
+            nodeElement = "a";
+            nodeAttribute = "href";
+        }
+        else if (args[1] == "img")
+        {
+            nodeElement = "img";
+            nodeAttribute = "src";
+        }
+        else
+        {
+            Console.WriteLine("Option has to be either \"img\" or \"a\". Cant be: " + args[1]);
+            return;
+        }
+
         string downloadFolder = Path.Combine(Environment.CurrentDirectory, "DownloadedImages");
-        if (args.Length > 0)
-            downloadFolder = Path.Combine(downloadFolder, args[1]);
+        try
+        {
+            downloadFolder = Path.Combine(downloadFolder, args[2]);
+        }
+        catch (IndexOutOfRangeException ex)
+        {
+            Console.WriteLine("No download folder specified.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Unknown error: " + ex);
+            throw;
+        }
 
         Directory.CreateDirectory(downloadFolder);
 
         HttpClient client = new HttpClient();
-        string html = await client.GetStringAsync(url);
+        string html = "";
+        try
+        {
+            html = await client.GetStringAsync(url);
+        }
+        catch (InvalidOperationException ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+            return;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Unhandled Error: " + ex);
+            return;
+        }
 
         var doc = new HtmlDocument();
         doc.LoadHtml(html);
 
-        var imgNodes = doc.DocumentNode.SelectNodes("//a[@href]");
+        var imgNodes = doc.DocumentNode.SelectNodes("//" + nodeElement + "[@" + nodeAttribute + "]");
 
         if (imgNodes == null)
         {
@@ -41,7 +89,7 @@ class Program
         int count = 0;
         foreach (var img in imgNodes)
         {
-            string imgUrl = img.GetAttributeValue("href", "");
+            string imgUrl = img.GetAttributeValue(nodeAttribute, "");
             if (string.IsNullOrEmpty(imgUrl))
                 continue;
 
